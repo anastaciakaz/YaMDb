@@ -9,6 +9,7 @@ services:
     env_file:
       - ./.env
   web:
+    image: anastaciakaz98/infra-web:latest
     build:
         context: ../
         dockerfile: api_yamdb/Dockerfile
