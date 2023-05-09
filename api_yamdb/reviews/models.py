@@ -1,8 +1,9 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
-from .validators import max_year_title
 from users.models import User
+
+from .validators import max_year_title
 
 
 class Category(models.Model):

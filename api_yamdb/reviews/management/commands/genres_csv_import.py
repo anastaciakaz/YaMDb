@@ -2,7 +2,6 @@ import os
 from csv import DictReader
 
 from django.core.management import BaseCommand
-
 from reviews.models import Genre
 
 ALREDY_LOADED_ERROR_MESSAGE = """

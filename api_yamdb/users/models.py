@@ -72,13 +72,11 @@ class User(AbstractUser):
         и имя этого пользователя.
         """
 
-        token = jwt.encode(
+        return jwt.encode(
             {'id': self.pk, 'username': self.username},
             settings.SECRET_KEY,
             algorithm='HS256',
         )
-
-        return token
 
     class Meta:
         ordering = ['-id']
