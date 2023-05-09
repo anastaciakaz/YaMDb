@@ -1,16 +1,9 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from .views import (
-    CategoryViewSet,
-    CommentsViewSet,
-    GenreViewSet,
-    ReviewViewSet,
-    TitlesViewSet,
-    TokenView,
-    UserSignUpView,
-    UsersViewSet,
-)
+from .views import (CategoryViewSet, CommentsViewSet, GenreViewSet,
+                    ReviewViewSet, TitlesViewSet, TokenView, UserSignUpView,
+                    UsersViewSet)
 
 
 class NoPutRouter(routers.DefaultRouter):
