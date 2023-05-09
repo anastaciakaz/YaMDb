@@ -17,7 +17,7 @@
 
 ``` git clone https://github.com/anastaciakaz/infra_sp2.git ```
 
-Перейти в репозиторий с docker-compose файлом через терминал:
+Перейти в репозиторий с docker-compose файлом, используя терминал:
 
 ``` cd infra_sp2/infra ```
 
@@ -40,3 +40,4 @@
 ``` docker-compose exec web python manage.py dumpdata > dumpPostrgeSQL.json ```
 
 [![Yamdb workflow](https://github.com/anastaciakaz/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)](https://github.com/anastaciakaz/yamdb_final/actions/workflows/yamdb_workflow.yml)
+
