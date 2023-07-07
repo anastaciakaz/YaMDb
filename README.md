@@ -1,10 +1,10 @@
 # YAMDB
-## Описание
-Данный проект позволяет пользователям оставлять отзывы на любимую музыку, песни, фильмы и книги и всё, что угодно.
-Пользователи могут следить за любимыми обозревателями, писать комментарии, вступать в группы и, конечно же, оставлять свои отзывы и получать фидбэк.
-Что не мало важно, пользователям также можно ставить оценки произвдеениям. Из этих оценок складывается рейтинг.
-У произвдений есть жанры, которые может создавать только администратор.
-## Технологии
+## Description
+This project allows users to leave reviews for their favorite music, songs, movies and books and anything.
+Users can follow their favorite browsers, write comments, join groups and, of course, leave their reviews and receive feedback.
+Users can also rate works. These ratings form the rating.
+The works have genres that only the administrator can create.
+## Technologies
 - Python
 - Django
 - Django REST Framework
@@ -12,20 +12,20 @@
 - Gunicorn
 - Docker
 - Docker-compose
-## Как запустить 
-Клонировать репозиторий себе локально:
+## How to launch the project 
+Clone this repository to your PC:
 
 ``` git clone https://github.com/anastaciakaz/infra_sp2.git ```
 
-Перейти в репозиторий с docker-compose файлом, используя терминал:
+Go to repository with docker-compose file using terminal:
 
 ``` cd infra_sp2/infra ```
 
-Развернуть докер-контейнеры:
+Build docker containers:
 
 ``` docker-compose up -d --build ```
 
-Выполнить миграции и собрать статику:
+Run migrations and collect static:
 
 ``` docker-compose exec web python manage.py makemigrations ```
 
@@ -35,7 +35,7 @@
 
 ``` docker-compose exec web python manage.py collectstatic --no-input ```
 
-## Создаем дамп базы данных:
+## Creating a database dump:
 
 ``` docker-compose exec web python manage.py dumpdata > dumpPostrgeSQL.json ```
 
